@@ -9,7 +9,7 @@ try {
 contentfulConfig = {
   spaceId: process.env.CONTENTFUL_SPACE_ID || contentfulConfig.spaceId,
   accessToken:
-    process.env.CONTENTFUL_DELIVERY_TOKEN || contentfulConfig.accessToken,
+    process.env.CONTENTFUL_DELIVERY_TOKEN || contentfulConfig.accessToken
 }
 
 const { spaceId, accessToken } = contentfulConfig
@@ -21,14 +21,14 @@ if (!spaceId || !accessToken) {
 }
 
 module.exports = {
-  pathPrefix: '/gatsby-contentful-starter',
+  pathPrefix: '/myfirstgatsby',
   plugins: [
     'gatsby-transformer-remark',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-contentful',
-      options: contentfulConfig,
-    },
-  ],
+      options: contentfulConfig
+    }
+  ]
 }
