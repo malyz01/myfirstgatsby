@@ -14,7 +14,7 @@
     "gatsby-source-contentful": "^2.1.78",
     "gatsby-transformer-remark": "^2.1.6",
     "gh-pages": "^2.0.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.0"
